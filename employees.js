@@ -3,11 +3,11 @@ class Employee {
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = 0;
-        this.tax_percents = 13;
+        this.taxPercents = 13;
     }
 
     getSalary() {
-        return this.salary * (100 - this.tax_percents)/100;
+        return this.salary * (100 - this.taxPercents) / 100;
     }
 }
 
@@ -50,9 +50,9 @@ function showSalary(employee) {
     console.log(`${employee.firstName} ${employee.lastName} has salary: \$${employee.getSalary()}`)
 }
 
-sam = new Manager('Sam', 'Winchester', 1600);
-din = new Agent('Din', 'Winchester', 110);
-bob = new Workman('Bob', 'Singer',  6)
+let sam = new Manager('Sam', 'Winchester', 1600);
+let din = new Agent('Din', 'Winchester', 110);
+let bob = new Workman('Bob', 'Singer',  6)
 
 din.amountOfEmployees = 8;
 bob.workingHours = 174;
